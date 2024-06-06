@@ -35,8 +35,6 @@ def write_file(text):
     filename = current_time.strftime("%Y-%m-%d.%H-%M-%S") + ".txt"
     with open(filename, 'w') as file:
         file.write(text)
-        
-    # print(f"File created: {filename}")
 
 
 
