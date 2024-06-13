@@ -13,9 +13,9 @@ def get_news(topic, from_date, to_date, language='en',
     results = []
 
     for article in articles:
-        results.append(f"TITLE\n,{article['title']}, '\nDESCRIPTION\n,{article['description']}")
+        results.append(f"TITLE\n,{article['title']}, \nDESCRIPTION\n,{article['description']}")
         return results
     
 
 
-print(get_news(topic='israel', from_date='2024-06-01', to_date='2024-06-11'))
+print(get_news(topic='space', from_date='2024-06-10', to_date='2024-06-12'))
