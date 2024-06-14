@@ -14,7 +14,7 @@ def get_news(topic, from_date, to_date, language='en',
 
     for article in articles:
         results.append(f"TITLE\n,{article['title']}, \nDESCRIPTION\n,{article['description']}")
-        return results
+    return results
     
 
 
