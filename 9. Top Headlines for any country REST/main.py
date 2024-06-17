@@ -5,6 +5,7 @@ import requests
 
 
 def get_news(country, api_key='161c704dc37447aa85833c60774b31c1'):
+    country = input("Enter a country of your desire (2 letters i.e us/ca): ")
     url = f'https://newsapi.org/v2/top-headlines?country={country}&apiKey={api_key}'
     r = requests.get(url)
     content = r.json()
